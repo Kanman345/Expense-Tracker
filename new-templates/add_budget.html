@@ -1,0 +1,13 @@
+<h1>Add a budget</h1>
+
+<form action="add_budget" method="post">
+    {% csrf_token %}
+    <p>Name of the Budget:</p>
+    <input type="text" name="name"/>
+    <p>Total Amount:</p>
+    <input type="integer" name = "amount" required/><br>
+
+
+    <button type="submit">Add</button>
+</form>
+

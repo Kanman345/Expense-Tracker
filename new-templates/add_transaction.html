@@ -1,0 +1,14 @@
+<h1>Add a Transaction</h1>
+
+<form method="POST" action="{% url 'add_transaction' budget.id%}">
+    {% csrf_token %}
+    <p>Description:</p>
+    <input type="text" name="description"/>
+    <p>Amount:</p>
+    <input type="integer" name="amount" required/><br>
+
+    <input type="hidden" name="budget_id" value="{{ budget.id }}"/>
+
+    <button type="submit"> Add Transaction </button>
+</form>
+
