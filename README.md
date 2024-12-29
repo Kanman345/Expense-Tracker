@@ -13,5 +13,5 @@ A simple web-based expense tracker built with Django that allows users to manage
 ## Technologies Used
 
 - **Backend**: Python, Django
-- **Frontend**: HTML, CSS (for basic styling)
+- **Frontend**: HTML (for basic styling)
 - **Database**: SQLite (default database used by Django)
